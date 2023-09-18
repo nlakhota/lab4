@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+    <fieldset>
+      <legend>My Info</legend>
+      <div><label>First Name: <input size="25" type="text" name="first_name_field"></label></div>
+      <div><label>Last Name: <input size="25" type="text" name="last_name_field"></label></div>
+      <div><label>Phone Number: <input size="15" type="text" name="phone_field"></label></div>
+      <div><label>Email: <input size="50" type="text" name="email_field"></label></div>
+      <div>Gender: </div>
+      <div>
+        <label>Male <input type="radio" value="male" name="gender_field"></label>
+        <label>Female <input type="radio" value="female" name="gender_field"></label>
+      </div>
+      <div>Age: </div>
+      <select name="age_field">
+        <option>Under 18</option>
+        <option>18 to 23</option>
+		<option>Over 24</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>My Availability</legend>
+      <h3>Days Available:</h3>
+      <div>
+        <div><label>Sunday <input type="checkbox" value="Sunday" name="available_field[]"></label></div>
+        <div><label>Monday <input type="checkbox" value="Monday" name="available_field[]"></label></div>
+        <div><label>Tuesday <input type="checkbox" value="Tuesday" name="available_field[]"></label></div>
+        <div><label>Wednesday <input type="checkbox" value="Wednesday" name="available_field[]"></label></div>
+        <div><label>Thursday <input type="checkbox" value="Thursday" name="available_field[]"></label></div>
+        <div><label>Friday <input type="checkbox" value="Friday" name="available_field[]"></label></div>
+        <div><label>Saturday <input type="checkbox" value="Saturday" name="available_field[]"></label></div>
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </div>
+    </fieldset>
+    <input type="hidden" value="nlakhota" name="hidden_field">
+    <input type="submit">
+  </form>
+</body>
+</html>
